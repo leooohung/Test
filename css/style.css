@@ -1,3 +1,6 @@
+body{
+    font-family: MicrosoftJhengHei;
+}
 .wrap{
     width: 1024px;
     margin: 0 auto;
@@ -17,14 +20,12 @@
     color: #000000;
     font-size: 42px;
     line-height: 56px;
-    font-family: MicrosoftJhengHeiRegular;
     padding-bottom: 8px;
 }
 .header .headshot p{
     color: #4A4A4A;
     font-size: 14px;
     line-height: 19px;
-    font-family: MicrosoftJhengHeiRegular;
     padding-bottom: 8px;
 }
 .header .icon{
@@ -34,7 +35,6 @@
     color: #FFFFFF;
     font-size: 18px;
     line-height: 24px;
-    font-family: MicrosoftJhengHeiRegular;
 }
 .header .icon img{
     max-width: 100%;
@@ -44,7 +44,7 @@
     color: #1736DC;
     font-size: 24px;
     line-height: 32px;
-    font-family: MicrosoftJhengHeiBold;
+    font-weight: bold;
     text-align: center;
     padding: 56px 0px 48px 0px;
 }
@@ -92,7 +92,6 @@
     color: #4A4A4A;
     font-size: 18px;
     line-height: 24px;
-    font-family: MicrosoftJhengHeiRegular;
     text-align: center;
 }
 .content .skill .skill-inside{
@@ -102,9 +101,92 @@
     color: #4A4A4A;
     font-size: 12px;
     line-height: 16px;
-    font-family: MicrosoftJhengHeiRegular;
     list-style: disc;
     text-indent: 0em;
+}
+/* experience 設定 */
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 225px;
+    position: relative;
+
+    background-image: url(../images/dot-start.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 75px 0px;
+}
+.timeline::after{
+    content:'';
+    position: absolute;
+    left:50%;
+    border:2px solid #d8d8d8;
+    top:0;
+    height: 550px;
+    margin-left: -2px;
+    z-index: 1;
+}
+.timeline::before{
+    content:'';
+    position: absolute;
+    border: 2px solid #d8d8d8;
+    border-radius: 5px;
+    bottom: 23px;
+    width: 46px;
+    z-index: 1;
+}
+.experience li {
+    background: #FFFFFF;
+    border: 1px solid #FB56BF;
+    border-radius: 10px;
+    width: 260px;
+    height: 136px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+}
+.experience li::before {
+    content: url(../images/dot-timeItem.png);
+    position: absolute;
+    left: 50%;
+    margin: -12px 0 0 -12px;
+    z-index: 2;
+}
+.experience .left{
+    align-self: flex-start;
+}
+.experience .right{
+    align-self: flex-end;
+}
+.experience li span {
+    color: #4A4A4A;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0.53px;    
+}
+.experience h3 {
+    color: #8A1737;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0.53px; 
+    padding-top: 10px;
+}
+.experience h4 {
+    color: #4A4A4A;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.53px; 
+    padding-top: 10px;
+}
+.experience p {
+    color: #9B9B9B;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.44px;
+    padding-top: 10px;
 }
 /* Works 設定 */
 .content .work{
@@ -144,14 +226,13 @@
     color: #000000;
     font-size: 14px;
     line-height: 19px;
-    font-family: MicrosoftJhengHeiBold;
+    font-weight: bold;
     margin: 8px 0 0 8px;
 }
 .content .work p{
     color: #4A4A4A;
     font-size: 14px;
     line-height: 19px;
-    font-family: MicrosoftJhengHeiRegular;
     margin: 8px;
 }
 /* about 設定 */
@@ -169,7 +250,6 @@
     color: #4A4A4A;
     font-size: 14px;
     line-height: 26px;
-    font-family: MicrosoftJhengHeiRegular;
     text-align: justify;
 }
 /* footer 設定 */
@@ -180,7 +260,6 @@
 .footer p{
     color: #000000;
     font-size: 16px;
-    font-family: MicrosoftJhengHeiRegular;
     line-height: 87px;
     text-align: center;
 }
