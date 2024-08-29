@@ -2,6 +2,9 @@ body{
     font-family: MicrosoftJhengHei;
     text-decoration: none;
 }
+a[href^="tel:"] {
+    color: #000000;
+}
 .wrap{
     width: 1024px;
     margin: 0 auto;
