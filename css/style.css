@@ -47,28 +47,49 @@ a{
     white-space: nowrap;
 }
 .menu{
-    display: flex;
+    display: flex;  
 }
-.menu li a{
+.menu a{
     color: #00cc99;
     font-weight: bold;
+    text-align: center;
     letter-spacing: 3px;
     line-height: 50px;
     display: block;
-    margin-left: 50px;
+    margin: 0 25px;
     border-bottom: 5px solid transparent;
 }
-.menu li a:hover{
+.menu a:hover{
     border-bottom: 5px solid #00cc99;
 }
+.dropdown-open{
+    position: absolute;
+    z-index: 100;
+    color: #ffffff;
+    display: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dropdown-open a:hover{
+    color: #ffffff;
+    border-bottom: 5px solid transparent;
+}
 .banner{
-    background-image: url(../images/banner.png);
+    background-position: bottom;
     background-repeat: no-repeat;
     height: 345px;
     width: 1000px;
     display: flex;
     align-items: center;
-    padding-bottom: 50px;
+}
+.banner_bg_index{
+    background-image: url(../images/bg_index.png);
+}
+.banner_bg_course{
+    background-image: url(../images/bg_course.png);
+}
+.banner_bg_qa{
+    background-image: url(../images/bg_qa.png);
 }
 .banner h2{
     color: #ffffff;
@@ -78,6 +99,9 @@ a{
     padding: 30px 0px 30px 60px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+}
+.course{
+    padding-top: 50px;
 }
 .course-subject{
     display: flex;
@@ -206,7 +230,7 @@ a{
     padding: 30px;
     border-top: 1px solid #dddddd;
 }
-.footer h1 a{
+.footer-logo a{
     background-image: url(../images/footerLogo.png);
     height: 36px;
     width: 171px;
@@ -225,4 +249,19 @@ a{
 }
 .footer-connect a:hover{
     color: #e12d80;
+}
+
+/* swiper 設定 */
+.swiper {
+    width: 1000px;
+    height: 345px;
+}
+:root {
+    --swiper-theme-color: #ffffff;
+}
+.gotop a{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
 }
